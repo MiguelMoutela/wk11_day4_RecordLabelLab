@@ -19,4 +19,7 @@ describe ('Record', function (){
   it('should have an price', function() {
     assert.strictEqual(record.price, 'price')
   });
+  it('should print out info', function() {
+    assert.strictEqual(record.printInfo(), 'artist, title, genre, price')
+  });
 });
