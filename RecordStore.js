@@ -27,5 +27,11 @@ RecordStore.prototype.finHealth = function() {
   finHealth.push(value)
   return finHealth;
 }
+RecordStore.prototype.seeRecordInventoriesByGenre = function(genre) {
+  let RecordsOfAGenre = this.inventory.filter(function(record){
+    return record.genre === genre;
+  })
+  return RecordsOfAGenre;
+}
 
 module.exports = RecordStore;

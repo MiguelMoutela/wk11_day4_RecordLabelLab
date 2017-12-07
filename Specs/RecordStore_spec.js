@@ -40,5 +40,8 @@ describe ('RecordStore', function (){
   it('should show finHealth', function() {
     assert.deepEqual(recordStore.finHealth(), [0,50])
   })
+  it('should list by genre', function() {
+    assert.deepEqual(recordStore.seeRecordInventoriesByGenre('genre'), [record,record2])
+  })
 
 });
